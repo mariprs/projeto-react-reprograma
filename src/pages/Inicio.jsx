@@ -1,9 +1,10 @@
 import { Header } from '../components/Header'
+import fotoMari from '../assets/fotoMari.jpg'
 
 export function Inicio() {
     return (
         <>
-            <Header button='BEM-VINDO AO MEU PORTFOLIO' subtitle='Navegue pelo menu' />
+            <Header button='Portfolio de Mariana' subtitle='Navegue pelo menu acima' />
         </>
         )
 }

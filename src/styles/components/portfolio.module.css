@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Rie';
+    src: url('Rie-Regular.woff2') format('woff2'),
+        url('Rie-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Sao Torpes';
+    src: url('/src/styles/fonts/saotorpes-webfont.woff2') format('woff2'),
+         url('/src/styles/fonts/saotorpes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'glittenregular';
+    src: url('/src/styles/fonts/glitten-regular-webfont.woff2') format('woff2'),
+         url('/src/styles/fonts/glitten-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.input {
+    background-color: rgb(177 162 162 / 38%);
+    width: 62%;
+    max-height: 30%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    margin-left: 18%;
+    align-self: center;
+  }
+  
+.input:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(177 162 162 / 38%);;
+    outline-color: rgb(73, 60, 59);
+    box-shadow: -3px -3px 15px rgb(177 162 162 / 38%);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+.row{
+    background: rgb(177 162 162 / 38%);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgb(207 162 162 / 10%);
+    backdrop-filter: blur(16.1px);
+    -webkit-backdrop-filter: blur(16.1px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.columnTitle{
+    font-family: 'Sao Torpes';
+    font-size: 25px
+
+}
+
+.columnSubtitle{
+    font-family: 'Sao Torpes';
+    font-size: 15px;
+}
+
+.linkApi{
+    text-decoration: none;
+    color: #121111;
+    font-family: 'Sao Torpes';
+}
+
+p{
+    font-family: 'Sao Torpes';
+    font-size: 10px;
+}
+
+.biggerRow{
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 35px;
+    grid-column-gap: 25px;
+}

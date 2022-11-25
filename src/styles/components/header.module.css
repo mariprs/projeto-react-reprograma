@@ -50,7 +50,7 @@
     gap: 4rem
   }
   
-  button {
+  .headerTitle {
     --border-radius: 25px;
     --border-width: 7px;
     appearance: none;
@@ -61,18 +61,19 @@
     font-size: 18px;
     font-weight: 500;
     color: #ffff;
+    background: transparent;
     z-index: 2;
   }
   
-  button::after {
+  .headerTitle::after {
     --m-i: linear-gradient(#000, #000);
     --m-o: content-box, padding-box;
     content: "";
     position: absolute;
     left: 0;
     top: 0;
-    width: 50%;
-    height: 100%;
+    max-width: 20%;
+    max-height: 20%;
     padding: var(--border-width);
     background-image: conic-gradient(
           #ff0080,
@@ -93,14 +94,12 @@
     filter: hue-rotate(0);
     animation: rotate-hue634 linear 500ms infinite;
     animation-play-state: paused;
-    border-radius: 20px;
     border-color: #000;
   }
   
   button:hover::after {
     animation-play-state: running;
-    border-radius: 15px;
-    cursor: none;
+    cursor: default;
   }
   
   @keyframes rotate-hue634 {
@@ -112,47 +111,38 @@
   button,
   button::after {
     box-sizing: border-box;
-    border-radius: 15px;
+    background-color: transparent;
+    border-radius: 25px;
     cursor: default;
+    color: transparent;
   }
   
   button:active {
-    --border-width: 5px;
+    --border-width: 2px;
   }
   
 
   button {
-    padding: 0.9em 1.6em;
+    padding: 0.2em 1.0em;
     border: none;
     outline: none;
-    color: #FFF;
+    color: transparent;
     font-family: inherit;
     font-weight: 500;
-    font-size: 17px;
-    cursor: pointer;
+    font-size: 15px;
+    cursor: default;
     position: relative;
     z-index: 0;
     border-radius: 32px;
-  }
-  
-  button::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(46, 46, 46);
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+    background-color: transparent;
   }
   
   button::before {
     content: "";
     background: linear-gradient(
-      45deg,
-      #07d888, #e40851, #2f00ff, #00ff37,
-        #ec0808, #2600ff, #0bd157, #2f00ff
+      80deg,
+      #053e28, #620524, #100448, #035916,
+        #590707, #0b0432, #08371a, #100737
   );
     position: absolute;
     top: -2px;
@@ -164,7 +154,9 @@
     filter: blur(8px);
     animation: glowing345 20s linear infinite;
     transition: opacity .3s ease-in-out;
+    background-color: transparent;
     border-radius: 20px;
+    background-color: transparent;
     opacity: 0;
   }
   
@@ -182,15 +174,15 @@
     }
   }
   
-  button:hover::before {
+  .headerTitle:hover::before {
     opacity: 1;
   }
   
-  button:active:after {
+  .headerTitle:active:after {
     background: transparent;
   }
   
-  button:active {
+  .headerTitle:active {
     color: #000;
     font-weight: bold;
   }
@@ -200,6 +192,7 @@
     color: #fff;
     font-family: 'Minya Outline DEMO';
     font-size: 4rem;
+    margin-bottom: 100px;
   }
   
   .headerTitleOne{
@@ -221,3 +214,9 @@
     }
   }
   
+  .headerImageOne{
+    max-width: 25%;
+    border-radius: 100%;
+    filter: contrast(200%);
+    filter: opacity(30%);
+  }

@@ -1,5 +1,11 @@
-export function Portfolio() {
+import { Header } from '../components/Header'
+import { Portfolio } from '../components/Repos'
+
+export function Repos() {
     return (
-        <h1>Início da página de portfolio</h1>
-    )
+        <>
+            <Header button='Meus projetos' />
+            <Portfolio />
+        </>
+        )
 }

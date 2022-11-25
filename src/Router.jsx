@@ -3,7 +3,7 @@ import { Menu } from './components/Menu'
 import { Inicio } from './pages/Inicio'
 import { Contato } from './pages/Contato'
 import { Sobre } from './pages/Sobre'
-import { Portfolio } from './pages/Portfolio'
+import { Repos } from './pages/Portfolio'
 import { Footer } from './components/Footer'
 
 export function Router(){
@@ -13,7 +13,7 @@ export function Router(){
         <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='/sobre' element={<Sobre />} />
-            <Route path='/portfolio' element={<Portfolio />} />
+            <Route path='/portfolio' element={<Repos />} />
             <Route path ='/contato' element={<Contato />} />
         </Routes>
         <Footer />

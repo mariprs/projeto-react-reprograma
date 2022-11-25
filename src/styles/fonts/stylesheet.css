@@ -1,7 +1,28 @@
 @font-face {
+    font-family: 'sao_torpesregular';
+    src: url('./saotorpes-webfont.woff2') format('woff2'),
+         url('./saotorpes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'glittenregular';
+    src: url('./glitten-regular-webfont.woff2') format('woff2'),
+         url('./glitten-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'Avineo Personal Use Only';
-    src: url('Avineo-PersonalUseOnly.woff2') format('woff2'),
-        url('Avineo-PersonalUseOnly.woff') format('woff');
+    src: url('./Avineo-PersonalUseOnly.woff2') format('woff2'),
+        url('./Avineo-PersonalUseOnly.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +30,8 @@
 
 @font-face {
     font-family: 'Minya DEMO';
-    src: url('MinyaDEMO.woff2') format('woff2'),
-        url('MinyaDEMO.woff') format('woff');
+    src: url('./MinyaDEMO.woff2') format('woff2'),
+        url('./MinyaDEMO.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -18,8 +39,8 @@
 
 @font-face {
     font-family: 'Minya Outline DEMO';
-    src: url('MinyaOutlineDEMO.woff2') format('woff2'),
-        url('MinyaOutlineDEMO.woff') format('woff');
+    src: url('./MinyaOutlineDEMO.woff2') format('woff2'),
+        url('./MinyaOutlineDEMO.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -27,10 +48,18 @@
 
 @font-face {
     font-family: 'Rie';
-    src: url('Rie-Regular.woff2') format('woff2'),
-        url('Rie-Regular.woff') format('woff');
+    src: url('./Rie-Regular.woff2') format('woff2'),
+        url('./Rie-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'SaoTorpes';
+    src: url('./Rie-Regular.woff2') format('woff2'),
+        url('./Rie-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

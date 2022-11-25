@@ -1,5 +1,10 @@
+import { Header } from '../components/Header'
+import fotoMari from '../assets/fotoMari.jpg'
+
 export function Sobre() {
     return (
-        <h1>Início da página de sobre</h1>
-    )
+        <>
+            <Header image={fotoMari} button='Sobre Mariana'/>
+        </>
+        )
 }

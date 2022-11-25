@@ -17,9 +17,6 @@ export function Menu() {
             <li className={styles.menuItem}>
                 <Link className={styles.menuLink} to="/contato">Contato</Link>
             </li>
-            <li className={styles.lightTheme} to="" img>
-
-            </li>
         </ul>
     )
 }

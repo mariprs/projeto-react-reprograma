@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Header } from '../components/Header'
-import contatoImg from '../assets/shine-multiline-code-block.png'
-
+import { Medias } from '../components/Medias'
+import { database } from '../service/firebase'
+import { ref, push, set } from 'firebase/database'
 import styles from '../styles/components/contato.module.css'
 
 export function Contato() {
@@ -23,12 +23,18 @@ export function Contato() {
 
   function handleCreateMessage(event) {
     event.preventDefault()
-    console.log(nome, email, mensagem)
-  }
+    const messageListRef = ref(database, 'mensagens') // criei minha coleção
+    const newMessageRef = push(messageListRef) // nova mensagem vai para coleção mensagens
+    set(newMessageRef, {
+        nome: nome,
+        email: email,
+        texto: mensagem
+    })
+}
 
   return(
     <>
-      <Header button="Chama no contatinho"/>
+    <Medias />
       <div>
         <form className={styles.form} onSubmit={handleCreateMessage}>
           <input 
@@ -46,8 +52,11 @@ export function Contato() {
             placeholder="Digite sua mensagem"
             onChange={handleInputValueMensagem}
           />
-          <button type="submit" className={styles.formButton}>Enviar mensagem</button>
-        </form>
+          <button type="submit" className={styles.buttonTop}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span> Enviar</button></form>
       </div>
     </>
   )
