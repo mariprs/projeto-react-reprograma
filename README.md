@@ -1,10 +1,7 @@
 
 #  ReactJS | Aula 03 🚀 
 
-Turma Online 20 - Todas em Tech  | Front-end | Semana 15 | 2022 | { Profa } Simara Conceição
-
-
-![image](https://media2.giphy.com/media/D567hs4Dex0GEnAKOY/giphy.gif)
+Turma Online 20 - Todas em Tech  | Front-end | Semana 15 | 2022 | Mariana Pires
 
 ### Resumo
 Um site feito com React.js contendo um menu, múltiplas páginas e o banco de dados do Firebase.
